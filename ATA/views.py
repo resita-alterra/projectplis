@@ -2,6 +2,7 @@ from django.shortcuts import render
 from .models import VocabsIndo, Artikel
 
 # Create your views here.
+
 def search(request):
     if request.method == 'GET':
         ini = request.GET.get('cari')
