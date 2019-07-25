@@ -1,0 +1,75 @@
+body {
+    background-color: #6D93B3;
+}
+
+
+.isi_header, .isi_footer {
+    border: solid white 5px;
+    background-color: #b1daf6;
+    margin-bottom: 0;
+}
+
+.isi_footer {
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.col-md-8 {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.rowawal {
+    padding-top: 20px;
+    font-weight: bold;
+}
+
+
+.judulartikel a {
+    text-decoration: none;
+    color: #333333;
+}
+
+.headlineatas a  {
+    text-decoration: none;
+    color: white;
+}
+
+.judulartikel {
+    padding-left: 10px;
+}
+
+.judulartikel a:hover,
+.headlineatas a:hover {
+    color: blue;
+}
+
+.bordertopbot {
+    border-top: 1px solid grey;
+}
+
+
+
+
+/* artikel_detail */
+
+.border1 {
+    border-left: 1px solid red;
+    border-right: 1px solid grey;
+}
+
+.border2 {
+    border-bottom: 1px solid grey;
+}
+
+.border3 {
+    border-top: 1px solid grey;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+
+.scroll {
+    height: 50px;
+    overflow: scroll;
+}

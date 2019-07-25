@@ -1,0 +1,17 @@
+{%  extends 'base/base.html'  %}
+{%  load static  %}
+
+{% block content  %}
+    <form action="" method="get">
+        {{ filter.form.as_p }}
+        <input type="submit" />
+    </form>
+    {% for artikel in filter.qs %}
+        <br>
+        {{ artikel.tanggal }}
+        <br>
+        <a href="{% url 'artikel_detail' artikel.id %}">{{ artikel.judul }}</a>
+        <br><br>
+    {% endfor %}
+
+{%  endblock %}
