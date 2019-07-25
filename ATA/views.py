@@ -1,5 +1,5 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Artikel
+from .models import VocabsIndo, Artikel
 from .filters import ArtikelFilter
 
 
@@ -24,3 +24,16 @@ def order3(request):
 def artikel_kategori(request):
     f = ArtikelFilter(request.GET, queryset=Artikel.objects.all())
     return render(request, 'artikel_kategori.html', {'filter': f})
+
+# Create your views here.
+
+def search(request):
+    if request.method == 'GET':
+        ini = request.GET.get('cari')
+        if ini is not None:
+            try:
+                arti = VocabsIndo.objects.get(indo=ini)
+                return render(request, 'searchkata.html', {'kata':ini,'arti': arti})
+            except:
+                return render(request,'searchkata.html')
+    return render(request,'search.html')
