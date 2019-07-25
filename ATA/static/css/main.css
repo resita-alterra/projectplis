@@ -1,0 +1,101 @@
+body {
+    background-color: #7eafd7;
+    line-height: 1.5;
+    font-family: georgia, verdana, arial;
+}
+
+
+
+.isi_header {
+    border: solid white 3px;
+    background-color: #b1daf6;
+    /* border-radius: 10px; */
+    border-start-end-radius: 20px;
+    border-start-start-radius: 20px;
+    border-bottom-color: #7eafd7;
+}
+
+.menus {
+    border: solid white 3px;
+    background-color: #b1daf6;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    margin-bottom: 0;
+    
+}
+.menus a {
+    color: #004691;
+    font-size: 13px;
+    font-weight: bold;
+
+}
+
+
+
+.isi_footer {
+    border: solid white 5px;
+    background-color: #b1daf6;
+    margin-bottom: 10px;
+    padding-top: 10px;
+}
+
+
+/* bagian search  */
+
+.mainsearch input {
+    width: 350px;
+    font-size: 40px;
+}
+.mainsearch button {
+    font-size: 40px;
+    border-radius: 10px;
+    height: 72px;
+    background-color: #7eafd7;
+    color: white;
+}
+
+/* untuk searchkata.html */
+.from {
+    margin-top: 10px;
+padding: 10px 0 0 5px;
+font-size: 18px;
+font-weight: bold;
+font-family: georgia, verdana, arial;
+color: #222222;
+background-color: #c0e1f8;
+border-bottom: 1px solid #6095c0;
+}
+
+.judultabel {
+    display: block; 
+    text-align: center;
+    font-size: 15px; 
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+table {
+    display: block;
+    align-items: center;
+}
+
+thead {
+    background-color: #cdf7b9;
+    font-size: 13px;
+    color: #183a07;
+    font-weight: bold;
+    border-top:#183a07 solid 1px;;
+    height: 28px;
+}
+td {
+    border-left: #b1daf6 solid 1px;
+    border-right: #b1daf6 solid 1px;
+    border-bottom: #b1daf6 solid 1px;
+    padding: 5px;
+}
+ .th1 {
+     width: 201px;
+ }
+ .th2 {
+     width: 714px;
+ }
