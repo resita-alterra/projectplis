@@ -10,9 +10,9 @@
     {% block judul %}{% endblock %}
 </head>
 <body>
-    <div class="container">
+    <div class="container borderbot">
         <div class="header">
-            <div class="row d-flex justify-content-center isi_header">
+            <div class="row d-flex justify-content-center isi_header headerpls">
                 <div class="col-md-1" >
                     <img src="https://www.sederet.com/images/logo.png" style="width:100px; margin: 10px;">
                 </div>
@@ -25,16 +25,16 @@
                 </div>
             </div>
             <div class="row menus">
-                <div class="col-md-1 text-center">
-                    <a href="#"><h5>Home</h5></a>
+                <div class="col-md-1 menuhome text-center">
+                    <a href="#"><h5 class="font-weight-bold">Home</h5></a>
                 </div>
                 <div class="col-md-1 text-center">
-                    <a href="#"><h5>Kategori</h5></a> 
+                    <a href="#"><h5 class="font-weight-bold">Kategori</h5></a> 
                 </div>
-                <div class="col-md-9 text-right">
+                <div class="col-md-9 btn1 text-right">
                     <form method="GET" action="{% url 'search' %}">
-                        <input type="text" name="cari">
-                        <button type="submit">search</button>
+                        <input id="buttontrans" type="text" name="cari">
+                        <button type="submit" class="btn btn-primary"><h5 class="font-italic">Translate</h5></button>
                     </form>
                 </div>
             </div>
@@ -42,8 +42,7 @@
     </div>
     {% block content %}
     {% endblock %}
-
-    <div class="container">
+    <div class="container borderbot">
         <div class="footer">
             <div class="row d-flex justify-content-center isi_footer">
                     <p><span style="font-style: italic; font-weight: 700;color:#a12158; ">SukaSuka</span><span style="color: blue;font-style: italic; font-weight: 700;">.com</span> 2006-2019. <a href="#">Kamus</a> bahasa indonesia - bahasa inggris yang online di internet. </p>
