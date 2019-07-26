@@ -1,0 +1,39 @@
+{%  extends 'base/base.html'  %}
+{%  load static  %}
+
+{% block content  %}
+    <div class="container borderbot" style="background-color: white">
+        <div class="row justify-content-centeer">
+            <div class="col-md-6 text-left">
+                <br>
+                <h5>Kategori yang ada:</h5>
+                <ul>
+                    <li>Menulis</li>
+                    <li>Pidato </li>
+                    <li>General</li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-right">
+                <br>
+                <form action="" method="get">
+                    {{ filter.form.as_p }}
+                    <input type="submit" />
+                </form>
+            </div>
+        </div>
+        <br><br>
+        <div class="row justify-content-centeer">
+            <div class="col-md-12">
+                {% for artikel in filter.qs %}
+                <br>
+                <a href="{% url 'artikel_detail' artikel.id  %}">{{ artikel.judul }}</a>
+                <br>
+                {{ artikel.tanggal }}
+                <br><br>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
+
+{%  endblock %}

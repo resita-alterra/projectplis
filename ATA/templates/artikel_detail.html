@@ -1,0 +1,20 @@
+{%  extends 'base/base.html'  %}
+{%  load static  %}
+
+{% block content  %}
+<body>
+        <div class="container borderbot" style="background-color: white">
+            <div class="row justify-content-center">
+                <div class="col-md-8 text-justify">
+                    <div class="text-center">
+                        <img src="{{ artikel.foto  }}" width="100%" alt="">
+                    </div>
+                    <h2>{{  artikel.judul  }}</h2>
+                    <h4 style="color: teal">{{ artikel.tanggal  }}</h4>
+                    {{ artikel.isi }}
+                </div>
+            </div>
+        </div>
+</body>
+</html>
+{%  endblock %}
