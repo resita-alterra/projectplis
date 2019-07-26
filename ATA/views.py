@@ -37,3 +37,7 @@ def search(request):
             except:
                 return render(request,'searchkata.html')
     return render(request,'search.html')
+
+def listArtikel(request):
+    artikel = Artikel.objects.all()
+    return render(request, 'list_artikel.html', {'artikels': artikel})

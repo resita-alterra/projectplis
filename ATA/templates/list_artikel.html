@@ -1,0 +1,21 @@
+{%  extends 'base/base.html'  %}
+{%  load static  %}
+
+{% block content  %}
+<div class="container borderbot" style="background-color: white">
+    <div class="row justify-content-centeer">
+        <div class="col-md-12">
+            <img src="{{  artikel.foto  }}" alt="">
+            <br>
+            {% for artikel in artikels %}
+            <br>
+            <a href="{% url 'artikel_detail' artikel.id  %}">{{ artikel.judul }}</a>
+            <br>
+            {{ artikel.tanggal }}
+            <br><br>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{%  endblock %}

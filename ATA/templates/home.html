@@ -25,17 +25,19 @@
                 </div>
                 <div class="col-md-8 text-left " style="background-color: white">
                     {%  for artikel in artikels  %}
-                    <div class="row align-items-center">
+                    <div class="row align-items-center" style="padding-bottom: 10px">
                         <div class="col-md-4 text-center " style="background-color: white">
                             <a href="{% url 'artikel_detail' artikel.id %}"><img src="{{  artikel.foto  }}" width="250px" alt=""></a>
                         </div>
-                        <div class="col-md-8 judulartikel text-left" style="background-color: white">
+                        <br><br>
+                        <div class="col-md-8 judulartikel text-left">
                             <a href="{% url 'artikel_detail' artikel.id %}"><h3>{{  artikel.judul  }}</h3></a>
                         </div>
+                        <div class="col-mod-12"></div>
+                        <div class="w-100"></div>
                     </div>
                     {%  endfor  %}
                 </div>
-         
                 <div class="col-md-8 bordertopbot text-left" style="background-color: white">
                     <br>
                     <h4>Welcome to sukasuka.com</h4>

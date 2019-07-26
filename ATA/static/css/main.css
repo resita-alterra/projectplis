@@ -65,7 +65,7 @@ body {
       }
       
       @keyframes mymove {
-        50% {box-shadow: 10px 20px 30px blue;}
+        50% {box-shadow: 10px 20px 30px blue;},
 }
 
 /* artikel_detail */
