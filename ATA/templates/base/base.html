@@ -26,10 +26,10 @@
             </div>
             <div class="row menus">
                 <div class="col-md-1 menuhome text-center">
-                    <a href="#"><h5 class="font-weight-bold">Home</h5></a>
+                    <a href="{% url 'home'%}"><h5 class="font-weight-bold">Home</h5></a>
                 </div>
                 <div class="col-md-1 text-center">
-                    <a href="#"><h5 class="font-weight-bold">Kategori</h5></a> 
+                    <a href="{% url 'artikel_kategori'%}"><h5 class="font-weight-bold">Kategori</h5></a> 
                 </div>
                 <div class="col-md-9 btn1 text-right">
                     <form method="GET" action="{% url 'search' %}">

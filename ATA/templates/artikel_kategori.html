@@ -2,16 +2,37 @@
 {%  load static  %}
 
 {% block content  %}
-    <form action="" method="get">
-        {{ filter.form.as_p }}
-        <input type="submit" />
-    </form>
-    {% for artikel in filter.qs %}
-        <br>
-        {{ artikel.tanggal }}
-        <br>
-        <a href="{% url 'artikel_detail' artikel.id %}">{{ artikel.judul }}</a>
-        <br><br>
-    {% endfor %}
+    <div class="container" style="background-color: white">
+        <div class="row justify-content-centeer">
+            <div class="col-md-6 text-left">
+                <br>
+                <h5>Kategori yang ada:</h5>
+                <ul>
+                    <li>Menulis</li>
+                    <li>Pidato </li>
+                    <li>General</li>
+                </ul>
+            </div>
+            <div class="col-md-6 text-right">
+                <br>
+                <form action="" method="get">
+                    {{ filter.form.as_p }}
+                    <input type="submit" />
+                </form>
+            </div>
+        </div>
+        <div class="row justify-content-centeer">
+            <div class="col-md-12">
+                {% for artikel in filter.qs %}
+                <br>
+                {{ artikel.tanggal }}
+                <br>
+                <a href="{% url 'artikel_detail' artikel.id  %}">{{ artikel.judul }}</a>
+                <br><br>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    
 
 {%  endblock %}

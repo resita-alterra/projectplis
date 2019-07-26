@@ -2,7 +2,7 @@ from django.contrib import admin
 
 # Register your models here.
 
-from .models import Artikel
+from .models import Artikel, VocabsIndo
 
 class ArtikelAdmin(admin.ModelAdmin):
     list_display = ['id', 'judul', 'tanggal']  
@@ -10,3 +10,4 @@ class ArtikelAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Artikel, ArtikelAdmin)
+admin.site.register(VocabsIndo)
