@@ -1,0 +1,21 @@
+{% extends 'base/base.html' %}
+{% load static %}
+{% block judul %} <title>Search</title> {% endblock %}
+
+{% block content %}
+<body>
+    <div class="container" >
+        <div class="row d-flex justify-content-center" style="background-color: white; height : 450px;">
+            <div class="col-md-6 self-align-center">
+                <form method="GET" style="padding-top: 180px;" class="mainsearch">
+                    <input type="text" name="cari">
+                    <button type="submit">search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+            
+
+{% endblock %}
